@@ -20,4 +20,8 @@ public class Contato {
     private String email;
     @Column
     private Boolean favorito;
+
+    @Column
+    @Lob //informa ao jpa que é uma coluna especial
+    private byte[] foto;
 }
